@@ -42,14 +42,15 @@ So, you can use it in your code exactly like ```List<T>```, except you have to a
 Constructor (also parameter-less constructor available):
 ```WeightedList(List<T> objects, List<float> weights)```
   
-```int IndexOf(float weight)``` - get first index of item with given weight.
-```int IndexOf(T item)``` - get first index of item.
-```void Insert(int index, T item)``` - inserts item at index with 0 weight.
-```void Insert(int index, T item, float weight)``` - inserts item at index with given weight.
-```void Add(T item, float weight)```- adds item to the end of list with given weight.
-``` void Add(T item)``` - adds item to the end of list with 0 weight.
+- ```int IndexOf(float weight)``` - get first index of item with given weight.
+- ```int IndexOf(T item)``` - get first index of item.
+- ```void Insert(int index, T item)``` - inserts item at index with 0 weight.
+- ```void Insert(int index, T item, float weight)``` - inserts item at index with given weight.
+- ```void Add(T item, float weight)```- adds item to the end of list with given weight.
+- ``` void Add(T item)``` - adds item to the end of list with 0 weight.
 
 To keep usage safe, Weighted List implements read-only interface:
+
 ```
 public interface IReadOnlyWeightedList<T>
     {
@@ -61,16 +62,16 @@ public interface IReadOnlyWeightedList<T>
 
 ```
 Lets describe it:
-```T GetRandomByWeight()``` - itd a main routine to use: it randomly selects an item from list by its weight.
-```float GetWeightAtIndex(int index)``` - allows you to know the weight at particular index.
-```float GetTotalWeight()``` - returns the sum of all weights.
-``` float GetNormalizedWeightAtIndex(int index)``` - Normalized weights means the weight value, proportional to absolute value, but when the total weights sum equals 1. For example, we have two items, weigths are 2 and 6. Normalized weights for these items are 0.25 and 0.75.
+- ```T GetRandomByWeight()``` - itd a main routine to use: it randomly selects an item from list by its weight.
+- ```float GetWeightAtIndex(int index)``` - allows you to know the weight at particular index.
+- ```float GetTotalWeight()``` - returns the sum of all weights.
+- ``` float GetNormalizedWeightAtIndex(int index)``` - Normalized weights means the weight value, proportional to absolute value, but when the total weights sum equals 1. For example, we have two items, weigths are 2 and 6. Normalized weights for these items are 0.25 and 0.75.
 
 Additionally, ```WeightedList<T>``` provides next methods:
 
-```void SetWeightAtIndex(int index, float weight)``` - sets weight for item with given index.
-```void Normalize()``` - normalizes all weights (total weights sum will be 1).
-```void SetWeightOf(T item, float weight)``` - sets weight for particular item (first occurance).
+- ```void SetWeightAtIndex(int index, float weight)``` - sets weight for item with given index.
+- ```void Normalize()``` - normalizes all weights (total weights sum will be 1).
+- ```void SetWeightOf(T item, float weight)``` - sets weight for particular item (first occurance).
 
 ## Weighted List property drawer ##
 To make it comfortable to use Weighted List in unity, custom property drawer provided.
