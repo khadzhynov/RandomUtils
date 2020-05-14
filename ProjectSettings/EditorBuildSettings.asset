@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/RandomUtils/Examples/Scenes/RandomizerFlatDistributionDemo.unity
+    guid: 036c7bb05dd17ee4e8f75e9568620f05
+  - enabled: 1
+    path: Assets/RandomUtils/Examples/Scenes/RandomizerNoRepeatDemo.unity
+    guid: f3a83851809da0144b0ac864b5c000f7
+  - enabled: 1
+    path: Assets/RandomUtils/Examples/Scenes/WeightedPrefabsDemo.unity
+    guid: e6d03e5efcfb7bf4d903862dc7907157
+  - enabled: 1
+    path: Assets/RandomUtils/Examples/Scenes/WeightedListMathTest.unity
+    guid: f1e66ddc7da0877428500f8912053ace
+  m_configObjects: {}
