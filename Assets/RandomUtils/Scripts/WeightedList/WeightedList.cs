@@ -12,8 +12,6 @@ namespace GG.Infrastructure.Utils
     [Serializable] public class WeightedListOfMonoBehaviours : WeightedList<MonoBehaviour> { }
     [Serializable] public class WeightedListOfScriptableObjects : WeightedList<ScriptableObject> { }
 
-
-
     public interface IReadOnlyWeightedList<T>
     {
         T GetRandomByWeight();
