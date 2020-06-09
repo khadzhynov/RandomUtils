@@ -3,6 +3,9 @@ Set of utils for make work with random selections more comfortable.
 
 Includes Randomizer and Weighted List.
 
+### Asset store ###
+ https://assetstore.unity.com/packages/slug/169229
+
 ## Features ##
 #### Randomizer ####
 - Non-repetitions random.
